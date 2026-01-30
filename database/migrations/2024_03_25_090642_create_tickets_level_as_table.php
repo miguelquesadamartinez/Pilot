@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('tickets_level_as', function (Blueprint $table) {
+            $table->id();
+
+            $table->bigInteger('status_id')->nullable();
+
+            $table->string('level_a_en')->nullable();
+            $table->string('level_a_es')->nullable();
+            $table->string('level_a_fr')->nullable();
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('tickets_level_as');
+    }
+};

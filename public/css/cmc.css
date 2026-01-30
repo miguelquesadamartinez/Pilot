@@ -1,0 +1,108 @@
+
+.resultsDiv {
+    text-align :left;
+}
+
+.tableOne {
+    width: 150px;
+}
+
+.tableTwo {
+    width: 150px;
+}
+
+.tableThree {
+    width: 450px;
+    text-align: left;
+}
+
+.tableFour {
+    width: 150px;
+}
+
+
+.centerIT {
+    margin: auto;
+    width: 90%;
+    /*border: 3px solid rgb(0, 0, 0);*/
+    padding: 10px;
+    /*margin-left: 25px;*/
+  }
+
+.footer {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+
+.div1 {
+    float:left;
+   }
+.div2{
+   float:right;
+   }
+
+.vertical-center {
+    top: 50%;
+    left: 50%;;
+}
+
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+    margin-bottom: 25px;
+}
+.Column {
+    display: table-cell;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.loading {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left:-5px;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.loading-content {
+	position: absolute;
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #08609a; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left:50%;
+	animation: spin 2s linear infinite;
+	}
+	
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+    .put-it-down{
+        margin-top: 20px;
+    }
+    .text-14{
+        font-size: 14px;
+    }
+    .text-12{
+        font-size: 12px;
+    }
